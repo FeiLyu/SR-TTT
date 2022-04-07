@@ -31,6 +31,7 @@ segmentation task.
     │   │   ├── Image (CT slices in png format)
     │   │   ├── Liver (liver mask in png format)
     │   │   ├── Liver_nii (liver mask in nifti format)
+    │   │   ├── Gt_nii (groundtruth for evaluation)
     ```
 - Convert the nifti images to int32 png format, then subtract 32768 from the pixel intensities to obtain the original Hounsfield unit (HU) values, saved in Image folder, similar to the processing steps in [Deeplesion](https://nihcc.app.box.com/v/DeepLesion/file/306055882594).
 - The liver regions can be extracted by a leading liver segmentation model provided by  [nnU-Net](https://nihcc.app.box.com/v/DeepLesion/file/306055882594), saved in Liver(png format) and Liver_nii(nifti format).
