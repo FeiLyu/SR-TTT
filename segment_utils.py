@@ -364,8 +364,6 @@ def evaluate_nii(dir_out, gt_nii_path, epoch_name):
     output_file.close()
 
 
-
-    # 将评价指标写入到exel中
     liver_data = pd.DataFrame(lesion_segmentation_scores)
 
     liver_statistics = pd.DataFrame(index=['mean', 'std', 'min', 'max'], columns=list(liver_data.columns))
