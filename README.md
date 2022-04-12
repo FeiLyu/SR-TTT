@@ -1,9 +1,9 @@
 # SR-TTT
 
-Implementation of [Learning From Synthetic CT Images via Test-Time Training for Liver Tumor Segmentation](https://ieeexplore.ieee.org/xpl/tocresult.jsp?isnumber=4359023).
+Implementation of [Learning From Synthetic CT Images via Test-Time Training for Liver Tumor Segmentation](https://ieeexplore.ieee.org/document/9754550).
 
 <p align="center">
-    <img src="framework.png" align="center" height="920px">
+    <img src="framework.png" align="center" height="40%">
 </p>
 Overview of the proposed Synthetic-to-Real Test-Time Training (SR-TTT) method for learning from synthetic images in the liver tumor
 segmentation task.
@@ -57,4 +57,5 @@ segmentation task.
 ## Citation
 If you find this repository useful for your research, please cite the following: 
 ```
+F. Lyu, M. Ye, A. J. Ma, T. C. -F. Yip, G. L. -H. Wong and P. C. Yuen, "Learning From Synthetic CT Images via Test-Time Training for Liver Tumor Segmentation," in IEEE Transactions on Medical Imaging, doi: 10.1109/TMI.2022.3166230.
 ```
