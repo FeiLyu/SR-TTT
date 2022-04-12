@@ -57,5 +57,7 @@ segmentation task.
 ## Citation
 If you find this repository useful for your research, please cite the following: 
 ```
-F. Lyu, M. Ye, A. J. Ma, T. C. -F. Yip, G. L. -H. Wong and P. C. Yuen, "Learning From Synthetic CT Images via Test-Time Training for Liver Tumor Segmentation," in IEEE Transactions on Medical Imaging, doi: 10.1109/TMI.2022.3166230.
+F. Lyu, M. Ye, A. J. Ma, T. C. -F. Yip, G. L. -H. Wong and P. C. Yuen, 
+"Learning From Synthetic CT Images via Test-Time Training for Liver Tumor Segmentation," 
+in IEEE Transactions on Medical Imaging, doi: 10.1109/TMI.2022.3166230.
 ```
