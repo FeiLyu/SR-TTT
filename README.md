@@ -1,4 +1,4 @@
-# SR-TTT
+# Learning From Synthetic CT Images via Test-Time Training for Liver Tumor Segmentation.
 
 Implementation of [Learning From Synthetic CT Images via Test-Time Training for Liver Tumor Segmentation](https://ieeexplore.ieee.org/document/9754550).
 
