@@ -118,7 +118,7 @@ def seg_trainer_baseline(opt):
 
 
 
-# our mrthod
+# our method
 def seg_trainer_ttt(opt):
     # ----------------------------------------
     #      Initialize training parameters
