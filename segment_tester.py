@@ -150,10 +150,7 @@ def seg_tester_co_ttt(opt, checkpoint_name, lr, iters, generator_path, segmentor
             gen_output = torch.sigmoid(generator(img))
             # segmentor
             seg_output = segmentor(img)
-            
-            #-----------------------------sign--------------------------------------
-            sign_img = torch.sign(img - gen_output)*liver[:,0:1,:,:]
-
+      
             # reconstructor 
             re_output = torch.sigmoid(reconstructor(torch.cat((gen_output, torch.sigmoid(seg_output)), 1)))
 
