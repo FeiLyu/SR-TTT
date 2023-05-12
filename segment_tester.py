@@ -132,9 +132,8 @@ def seg_tester_co_ttt(opt, checkpoint_name, lr, iters, generator_path, segmentor
     #            Testing
     # ----------------------------------------
     # Testing loop
-    for batch_idx, (img, liver, lesion, file_name) in enumerate(dataloader):
+    for batch_idx, (img, liver, file_name) in enumerate(dataloader):
         img = img.cuda()
-        lesion = lesion.cuda()
         liver = liver.cuda()
         file_name = file_name[0]
 
