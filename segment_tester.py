@@ -89,6 +89,10 @@ def seg_tester_co_ttt(opt, checkpoint_name, lr, iters, generator_path, segmentor
     os.environ["PYTHONHASHSEED"] = str(seed)
 
     #  set path
+    results_folder_path = opt.sample_path + checkpoint_name 
+    if os.path.isdir(results_folder_path) is False:
+        os.mkdir(results_folder_path)
+
     results_path = opt.sample_path + checkpoint_name +  '/' + 'out_png'
     if os.path.isdir(results_path) is False:
         os.mkdir(results_path)
@@ -103,9 +107,9 @@ def seg_tester_co_ttt(opt, checkpoint_name, lr, iters, generator_path, segmentor
 
     #-------------------------------------------------------------------------------------------------------------------------
     # Build networks
-    generator = segment_utils.create_Unet(opt, n_type='U64')
-    reconstructor = segment_utils.create_Unet(opt, n_type='U64', in_channels=2)
-    segmentor = segment_utils.create_Unet(opt, n_type='U64')
+    generator = segment_utils.create_Unet(opt)
+    reconstructor = segment_utils.create_Unet(opt, in_channels=2)
+    segmentor = segment_utils.create_Unet(opt)
 
 
     # To device
