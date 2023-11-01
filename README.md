@@ -34,7 +34,7 @@ segmentation task.
     │   │   ├── Gt_nii (groundtruth for evaluation)
     ```
 - Convert the nifti images to int32 png format, then subtract 32768 from the pixel intensities to obtain the original Hounsfield unit (HU) values, saved in Image folder, similar to the processing steps in [Deeplesion](https://nihcc.app.box.com/v/DeepLesion/file/306055882594).
-- The liver regions can be extracted by a leading liver segmentation model provided by  [nnU-Net](https://nihcc.app.box.com/v/DeepLesion/file/306055882594), saved in Liver(png format) and Liver_nii(nifti format).
+- The liver regions can be extracted by a leading liver segmentation model provided by  [nnU-Net](https://zenodo.org/records/4003545), saved in Liver(png format) and Liver_nii(nifti format).
 - Config, configure file of the dataset.
 - Dataset of MSD08 can be downloaded from the [link](https://drive.google.com/file/d/1sXIxQYg5bl_qzaMPL9YWJHHMtbVQkSkc/view?usp=sharing). LiTS dataset can be processed using the above steps, we do not provide all the processed images due to its large dataset size.
 
